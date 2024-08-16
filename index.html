@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img8.jpg" type="image/x-icon">
+    <title>Form</title>
+    <style>
+      html {
+        color-scheme: dark;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      body {
+        gap: 20px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Courier New", Courier, monospace;
+      }
+      footer, #self, form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      footer {
+        width: 100%;
+        height: 100%;
+        /* border: 3px solid green; */
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 30px;
+        font-size: 20px;
+        gap: 20px;
+      }
+      #self{
+        /* border: 2px solid yellow; */
+        width: 50%;
+        padding-bottom: 20px;
+      }
+
+      #self a{
+        text-decoration: none;
+        color: #fff;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #self a img{
+        width: 30px;
+        float: left;
+      }
+
+      #self div{
+        display: flex;
+        padding: 20px;
+        gap: 30px;
+      }
+      form {
+        gap: 20px;
+        padding: 10px;
+        /* border: 2px solid red; */
+      }
+
+      input,
+      button,textarea {
+        text-align: start;
+        width: 100%;
+        padding: 10px;
+        outline: 2px solid #fff;
+      }
+      button{
+        text-align: center;
+        background-color: #fff;
+        color: #000;
+      }
+      textarea{
+        resize: vertical;
+      }
+
+      #profile-img {
+        width: 40%;
+        border-radius: 50%;
+        margin: 20px;
+      }
+
+      @media screen and (width < 800px) {
+        footer{
+          flex-direction: row;
+          padding: 10px;
+          margin: 0;
+        }
+        #self{
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Hello👋 I'm Jatin</h1>
+    <footer id="footer">
+
+      <div id="self">
+        <img id="profile-img" src="img8.jpg" alt="" />
+       <h3> Name : Jatin Giri</h3>
+       <div>
+         <a href="https://twitter.com/JatinJatin44471" target="_blank"><img src="twitter.png" alt=""></a>
+         <a href="https://www.instagram.com/jan28jatin28jan/" target="_blank"><img src="instagram.png" alt=""></a>
+        </div>
+      </div>
+
+      
+      <form action="https://formsubmit.co/bbb213fe5974bcd46db8f1c08e866b9e" method="POST">
+      <h1>Contact Form</h1>
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Message"></textarea>
+  
+        <input type="hidden" name="_next" value="https://jatin-giri.github.io/ThankYouPage/" />
+
+        <input type="hidden" name="_captcha" value="false" />
+
+        <input type="hidden" name="_autoresponse" value="🙏🙏🙏....Thank You Very Much for Review....🧑😊"/>
+
+        <input type="hidden" name="_template" value="table" />
+
+        <button type="submit">Submit</button>
+      </form>
+      
+    </footer>
+    <p>Copyright&#169; | 😎 | All rights reserved</p>
+  </body>
+</html>
